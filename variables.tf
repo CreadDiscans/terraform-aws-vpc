@@ -950,6 +950,11 @@ variable "intra_subnet_tags" {
   default     = {}
 }
 
+variable "intra_subnet_tags_per_az" {
+  type        = map(map(string))
+  default     = {}
+}
+
 variable "intra_route_table_tags" {
   description = "Additional tags for the intra route tables"
   type        = map(string)
